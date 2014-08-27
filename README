@@ -1,4 +1,4 @@
-# CTR crypto library
+#CTR crypto library
 
 A library to access the crypto hardware on the 3DS from ARM9.
 It's still not complete, but AES is implemented (except AES MAC stuff).
