@@ -182,7 +182,7 @@ u32 AES_crypt(AES_CTX *ctx, u32 *in_buf, u32 *out_buf, u32 size)
   }
 
 
-  if((ctx->params>>27)&7<2)
+  if(((ctx->params>>27)&7)<2)
   {
     AES_SetControl(ctx->CTR_IV_Nonce[4]); // Endianess & word order
     AES_SetNonce(ctx->CTR_IV_Nonce);
