@@ -26,7 +26,7 @@
 
 #define AES_WRITE_FIFO_COUNT      ((REG_AESCNT>>0) & 0x1F)
 #define AES_READ_FIFO_COUNT       ((REG_AESCNT>>5) & 0x1F)
-#define AES_BUSY                  (1<<31)
+#define AES_BUSY                  (1U<<31)
 
 #define AES_FLUSH_READ_FIFO       (1<<10)
 #define AES_FLUSH_WRITE_FIFO      (1<<11)
@@ -42,7 +42,7 @@
 #define AES_UPDATE_KEYSLOT        (1<<26) // AES_UNKNOWN_26
 #define AES_MODE(n)               ((n&7)<<27)
 #define AES_INTERRUPT_ENABLE      (1<<30)
-#define AES_ENABLE                (1<<31)
+#define AES_ENABLE                (1U<<31)
 
 #define AES_MODE_CCM_DECRYPT      (0)
 #define AES_MODE_CCM_ENCRYPT      (1)
